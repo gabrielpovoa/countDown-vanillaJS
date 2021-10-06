@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #eee;
+}
+
+h2 {
+    font-size: 5rem;
+    padding: 3rem;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem 9%
+}
+
+.cooming-soon .waiting {
+    object-fit: cover;
+    height: 50vh;
+}
+
+.cooming-soon {
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cooming-soon .countdown {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+    font-size: 2.5rem;
+    color: #2c2c2c;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+    section {
+        padding: 2rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    .day,
+    .hour,
+    .minute,
+    .second  {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .day,
+    .hour,
+    .minute,
+    .second  {
+        font-size: 1.7rem;
+    }
+} 
